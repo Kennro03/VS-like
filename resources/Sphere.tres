@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://cd6xue0xt408a"]
+
+[ext_resource type="Script" uid="uid://dsxv0rjw5nrao" path="res://scenes/EnemyType.gd" id="1_b5h1p"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pu3ys"]
+load_path = "res://.godot/imported/sphere1.png-781d8d2c75fd7ed07ec3c882c0bbf000.ctex"
+
+[resource]
+script = ExtResource("1_b5h1p")
+title = "Sphere"
+texture = SubResource("CompressedTexture2D_pu3ys")
+health = 0.0
+damage = 7.0
+metadata/_custom_type_script = "uid://dsxv0rjw5nrao"

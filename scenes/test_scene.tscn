@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4m5jhlmw28ym"]
+
+[ext_resource type="PackedScene" uid="uid://b50bchgqy227m" path="res://scenes/player.tscn" id="1_uhqqe"]
+[ext_resource type="PackedScene" uid="uid://btymeodsf1ktq" path="res://scenes/spawner.tscn" id="2_j8ivh"]
+
+[node name="TestScene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_uhqqe")]
+position = Vector2(470, 159)
+
+[node name="Spawner" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_j8ivh")]
+player = NodePath("../Player")
