@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b50bchgqy227m"]
+[gd_scene load_steps=7 format=3 uid="uid://b50bchgqy227m"]
 
 [ext_resource type="Script" uid="uid://ct31f8fd1k1x4" path="res://scenes/player.gd" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://b5jxgmgrg3jpf" path="res://scenes/slot.tscn" id="2_g2els"]
+[ext_resource type="Resource" uid="uid://dipj1yqx2d4nt" path="res://resources/Weapons/Magic Wand.tres" id="3_qhqgy"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_onrkg"]
 size = Vector2(20, 20)
@@ -11,6 +13,22 @@ size = Vector2(20, 20)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_4flbx")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Weapons" type="HBoxContainer" parent="UI"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Slot" parent="UI/Weapons" instance=ExtResource("2_g2els")]
+layout_mode = 2
+weapon = ExtResource("3_qhqgy")
+
+[node name="Slot2" parent="UI/Weapons" instance=ExtResource("2_g2els")]
+layout_mode = 2
+
+[node name="Slot3" parent="UI/Weapons" instance=ExtResource("2_g2els")]
+layout_mode = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("PlaceholderTexture2D_onrkg")

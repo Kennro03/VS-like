@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://8xggia86105s"]
 
-[ext_resource type="Script" uid="uid://dsxv0rjw5nrao" path="res://scenes/EnemyType.gd" id="1_elubm"]
+[ext_resource type="Script" uid="uid://dsxv0rjw5nrao" path="res://scenes/EnemyType.gd" id="1_hi4h4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kk8qv"]
 load_path = "res://.godot/imported/slime1.png-af8a9b0bb11714880518ba00d1449d43.ctex"
 
 [resource]
-script = ExtResource("1_elubm")
+script = ExtResource("1_hi4h4")
 title = "Slime"
 texture = SubResource("CompressedTexture2D_kk8qv")
-health = 0.0
+health = 5.0
 damage = 3.0
 metadata/_custom_type_script = "uid://dsxv0rjw5nrao"

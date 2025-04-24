@@ -19,7 +19,8 @@ config/icon="res://icon.svg"
 
 folder_colors={
 "res://Shaders/": "pink",
-"res://resources/": "blue"
+"res://resources/": "blue",
+"res://resources/Enemies/": "red"
 }
 
 [input]
