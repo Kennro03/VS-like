@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dho2yckrger8o"
-path="res://.godot/imported/eye2.png-85cf9f4ea90702d0de22b4e4596d5176.ctex"
+uid="uid://bq4s0xevvst1y"
+path="res://.godot/imported/ProgressXP.png-912e8e35c3308421f7774dca44df6cd5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/eye2.png"
-dest_files=["res://.godot/imported/eye2.png-85cf9f4ea90702d0de22b4e4596d5176.ctex"]
+source_file="res://assets/Level Up & Option/ProgressXP.png"
+dest_files=["res://.godot/imported/ProgressXP.png-912e8e35c3308421f7774dca44df6cd5.ctex"]
 
 [params]
 

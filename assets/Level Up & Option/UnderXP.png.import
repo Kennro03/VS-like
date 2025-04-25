@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clsi6ih4tri8n"
-path="res://.godot/imported/slime3.png-855f2405942af3a922bd182fed4f1b1c.ctex"
+uid="uid://bdsgdfp43vr04"
+path="res://.godot/imported/UnderXP.png-885b05973081b67ec1325daeefbd308f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/slime3.png"
-dest_files=["res://.godot/imported/slime3.png-855f2405942af3a922bd182fed4f1b1c.ctex"]
+source_file="res://assets/Level Up & Option/UnderXP.png"
+dest_files=["res://.godot/imported/UnderXP.png-885b05973081b67ec1325daeefbd308f.ctex"]
 
 [params]
 

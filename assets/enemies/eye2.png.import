@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b61atqrqatjtr"
-path="res://.godot/imported/sphere1.png-781d8d2c75fd7ed07ec3c882c0bbf000.ctex"
+uid="uid://dho2yckrger8o"
+path="res://.godot/imported/eye2.png-bb9251fd788fa0ffa60749d55b3aec3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sphere1.png"
-dest_files=["res://.godot/imported/sphere1.png-781d8d2c75fd7ed07ec3c882c0bbf000.ctex"]
+source_file="res://assets/enemies/eye2.png"
+dest_files=["res://.godot/imported/eye2.png-bb9251fd788fa0ffa60749d55b3aec3c.ctex"]
 
 [params]
 

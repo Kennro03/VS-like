@@ -1,8 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://b50bchgqy227m"]
+[gd_scene load_steps=11 format=3 uid="uid://b50bchgqy227m"]
 
 [ext_resource type="Script" uid="uid://ct31f8fd1k1x4" path="res://scenes/player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://b5jxgmgrg3jpf" path="res://scenes/slot.tscn" id="2_g2els"]
 [ext_resource type="Resource" uid="uid://dipj1yqx2d4nt" path="res://resources/Weapons/Magic Wand.tres" id="3_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://bdsgdfp43vr04" path="res://assets/Level Up & Option/UnderXP.png" id="4_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://ne15md1ar30p" path="res://assets/Level Up & Option/OverXP.png" id="5_fjrip"]
+[ext_resource type="Texture2D" uid="uid://bq4s0xevvst1y" path="res://assets/Level Up & Option/ProgressXP.png" id="6_smehm"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_onrkg"]
 size = Vector2(20, 20)
@@ -11,14 +14,19 @@ size = Vector2(20, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_tuyoq"]
+radius = 50.0
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_4flbx")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Weapons" type="HBoxContainer" parent="UI"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 12.0
+offset_top = 11.0
+offset_right = 140.0
+offset_bottom = 51.0
 
 [node name="Slot" parent="UI/Weapons" instance=ExtResource("2_g2els")]
 layout_mode = 2
@@ -29,6 +37,24 @@ layout_mode = 2
 
 [node name="Slot3" parent="UI/Weapons" instance=ExtResource("2_g2els")]
 layout_mode = 2
+
+[node name="XP" type="TextureProgressBar" parent="UI"]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 40.0
+max_value = 10.0
+texture_under = ExtResource("4_tuyoq")
+texture_over = ExtResource("5_fjrip")
+texture_progress = ExtResource("6_smehm")
+
+[node name="Level" type="Label" parent="UI/XP"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 760.0
+offset_top = 10.0
+offset_right = 800.0
+offset_bottom = 33.0
+text = "Lv 1"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("PlaceholderTexture2D_onrkg")
@@ -61,5 +87,11 @@ autostart = true
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.5, 1.5)
 
+[node name="Magnet" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet"]
+shape = SubResource("CircleShape2D_tuyoq")
+
 [connection signal="body_entered" from="SelfDamage" to="." method="_on_self_damage_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="Magnet" to="." method="_on_magnet_area_entered"]
