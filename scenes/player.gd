@@ -13,12 +13,13 @@ var nearest_enemy_distance : float = INF
 var XP : int = 0:
 	set(value):
 		XP = value
-		$X.value = value
+		%XP.value = value
 var total_XP : int = 0
 var level : int = 1:
 	set(value):
 		level = value
 		%Level.text = "Lv " + str(value)
+		%Options.show_option()
 		
 		if level >=3:
 			%XP.max_value = 20
@@ -29,7 +30,7 @@ var level : int = 1:
 func _physics_process(delta):
 	if is_instance_valid(nearest_enemy) :
 		nearest_enemy_distance = nearest_enemy.separation
-		print(nearest_enemy.name)
+		#print(nearest_enemy.name)
 	else:
 		nearest_enemy_distance = INF
 	
@@ -57,7 +58,6 @@ func check_XP():
 		XP -= %XP.max_value
 		level += 1
 
-
 func _on_magnet_area_entered(area) :
 	if area.has_method("follow"):
-		area.follower(owner)
+		area.follow(self)

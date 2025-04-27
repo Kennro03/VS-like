@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Gem" load_steps=3 format=3 uid="uid://we4yokxswxa7"]
+
+[ext_resource type="Texture2D" uid="uid://42p4wjiagvuo" path="res://assets/Level Up & Option/YellowGem.png" id="1_tlleo"]
+[ext_resource type="Script" uid="uid://e6k7ofarc31s" path="res://scenes/Gem.gd" id="2_8rk4t"]
+
+[resource]
+script = ExtResource("2_8rk4t")
+XP = 3.0
+title = "Yellow Gem"
+icon = ExtResource("1_tlleo")
+description = "Gains Experience."
+metadata/_custom_type_script = "uid://e6k7ofarc31s"

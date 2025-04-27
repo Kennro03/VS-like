@@ -15,4 +15,14 @@ func _ready() :
 	$Sprite2D.texture = type.icon
 
 func _physics_process(delta):
-	
+	if player_reference and can_follow:
+		direction = (player_reference.position - position).normalized()
+		position += direction * speed * delta
+
+func follow(_target : CharacterBody2D):
+	can_follow = true
+
+
+func _on_body_entered(_body):
+	type.activate()
+	queue_free()

@@ -1,8 +1,50 @@
-[gd_resource type="Resource" script_class="SingleShot" load_steps=4 format=3 uid="uid://dipj1yqx2d4nt"]
+[gd_resource type="Resource" script_class="SingleShot" load_steps=11 format=3 uid="uid://dipj1yqx2d4nt"]
 
 [ext_resource type="PackedScene" uid="uid://dqsh8yyf474v6" path="res://scenes/projectile.tscn" id="1_7o3dl"]
 [ext_resource type="Script" uid="uid://co27ss4xsysev" path="res://scenes/SingleShot.gd" id="2_htixt"]
 [ext_resource type="Texture2D" uid="uid://c3tx6kkydbuob" path="res://assets/MagicWand.png" id="3_1wbmj"]
+[ext_resource type="Script" uid="uid://dhuvbp8vmhy5w" path="res://scenes/Upgrade.gd" id="4_1wbmj"]
+[ext_resource type="Script" uid="uid://gecycyowm75i" path="res://scenes/ProjectileUpgrade.gd" id="5_2bmtv"]
+
+[sub_resource type="Resource" id="Resource_0n8yj"]
+script = ExtResource("5_2bmtv")
+speed = 0.0
+damage = 1.0
+cooldown = 0.0
+description = "+1 Damage"
+metadata/_custom_type_script = "uid://gecycyowm75i"
+
+[sub_resource type="Resource" id="Resource_xm1je"]
+script = ExtResource("5_2bmtv")
+speed = 0.0
+damage = 0.0
+cooldown = -0.2
+description = "-0.2s Cooldown"
+metadata/_custom_type_script = "uid://gecycyowm75i"
+
+[sub_resource type="Resource" id="Resource_14jua"]
+script = ExtResource("5_2bmtv")
+speed = 200.0
+damage = 0.0
+cooldown = 0.0
+description = "+200 Projectile speed"
+metadata/_custom_type_script = "uid://gecycyowm75i"
+
+[sub_resource type="Resource" id="Resource_e41vn"]
+script = ExtResource("5_2bmtv")
+speed = 0.0
+damage = 2.0
+cooldown = 0.0
+description = "+2 Damage"
+metadata/_custom_type_script = "uid://gecycyowm75i"
+
+[sub_resource type="Resource" id="Resource_c4846"]
+script = ExtResource("5_2bmtv")
+speed = 0.0
+damage = 0.0
+cooldown = -0.1
+description = "-0.1s Cooldown"
+metadata/_custom_type_script = "uid://gecycyowm75i"
 
 [resource]
 script = ExtResource("2_htixt")
@@ -12,4 +54,5 @@ damage = 2.0
 cooldown = 0.75
 speed = 400.0
 projectile_node = ExtResource("1_7o3dl")
+upgrades = Array[ExtResource("4_1wbmj")]([SubResource("Resource_0n8yj"), SubResource("Resource_xm1je"), SubResource("Resource_14jua"), SubResource("Resource_e41vn"), SubResource("Resource_c4846")])
 metadata/_custom_type_script = "uid://co27ss4xsysev"

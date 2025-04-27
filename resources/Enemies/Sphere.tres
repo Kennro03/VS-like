@@ -1,6 +1,9 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://cd6xue0xt408a"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=6 format=3 uid="uid://cd6xue0xt408a"]
 
 [ext_resource type="Script" uid="uid://dsxv0rjw5nrao" path="res://scenes/EnemyType.gd" id="1_lwhp5"]
+[ext_resource type="Script" uid="uid://cbkcbohpfpvkj" path="res://scenes/PickupResource.gd" id="1_s2lee"]
+[ext_resource type="Resource" uid="uid://b731xgcnt2nrj" path="res://resources/Pickups/Green Gem.tres" id="2_k10k1"]
+[ext_resource type="Resource" uid="uid://we4yokxswxa7" path="res://resources/Pickups/Yellow Gem.tres" id="3_k10k1"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pu3ys"]
 load_path = "res://.godot/imported/sphere1.png-781d8d2c75fd7ed07ec3c882c0bbf000.ctex"
@@ -11,4 +14,5 @@ title = "Sphere"
 texture = SubResource("CompressedTexture2D_pu3ys")
 health = 7.0
 damage = 7.0
+drops = Array[ExtResource("1_s2lee")]([ExtResource("2_k10k1"), ExtResource("3_k10k1")])
 metadata/_custom_type_script = "uid://dsxv0rjw5nrao"
