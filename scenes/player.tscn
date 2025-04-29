@@ -86,9 +86,9 @@ text = "LEVEL UP"
 
 [node name="Weapons" type="HBoxContainer" parent="UI"]
 offset_left = 12.0
-offset_top = 11.0
+offset_top = 19.0
 offset_right = 140.0
-offset_bottom = 51.0
+offset_bottom = 59.0
 
 [node name="Slot" parent="UI/Weapons" instance=ExtResource("2_g2els")]
 layout_mode = 2
@@ -105,12 +105,13 @@ unique_name_in_owner = true
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -400.0
-offset_right = 400.0
-offset_bottom = 40.0
+offset_left = -576.0
+offset_right = 576.0
+offset_bottom = 10.0
 grow_horizontal = 2
 size_flags_horizontal = 3
 max_value = 10.0
+nine_patch_stretch = true
 texture_under = ExtResource("4_tuyoq")
 texture_over = ExtResource("5_fjrip")
 texture_progress = ExtResource("6_smehm")
@@ -118,10 +119,12 @@ texture_progress = ExtResource("6_smehm")
 [node name="Level" type="Label" parent="UI/XP"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 760.0
+offset_left = 1112.0
 offset_top = 10.0
-offset_right = 800.0
+offset_right = 1152.0
 offset_bottom = 33.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "Lv 1"
 
 [node name="Options" type="VBoxContainer" parent="UI" node_paths=PackedStringArray("weapons", "particles", "panel")]
@@ -178,7 +181,8 @@ zoom = Vector2(1.75, 1.75)
 collision_layer = 0
 collision_mask = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet"]
+[node name="Magnet" type="CollisionShape2D" parent="Magnet"]
+unique_name_in_owner = true
 shape = SubResource("CircleShape2D_tuyoq")
 
 [connection signal="body_entered" from="SelfDamage" to="." method="_on_self_damage_body_entered"]
