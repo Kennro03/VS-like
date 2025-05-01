@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://cqblx1f4qft1s"]
+
+[ext_resource type="Script" uid="uid://bevuna5vvpac3" path="res://scenes/PassiveItem.gd" id="1_fb37t"]
+[ext_resource type="Texture2D" uid="uid://billr0ct527by" path="res://assets/Items/max_health.png" id="2_ol0rj"]
+[ext_resource type="Script" uid="uid://d2h5t52xk8bls" path="res://scenes/Stats.gd" id="3_rwnda"]
+
+[sub_resource type="Resource" id="Resource_qd37x"]
+script = ExtResource("3_rwnda")
+description = "+20 Max Health"
+max_health = 20.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[sub_resource type="Resource" id="Resource_5luwg"]
+script = ExtResource("3_rwnda")
+description = "+50 Max Health"
+max_health = 50.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[sub_resource type="Resource" id="Resource_sfuds"]
+script = ExtResource("3_rwnda")
+description = "+80 Max Health"
+max_health = 80.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[resource]
+script = ExtResource("1_fb37t")
+upgrades = Array[ExtResource("3_rwnda")]([SubResource("Resource_qd37x"), SubResource("Resource_5luwg"), SubResource("Resource_sfuds")])
+title = "Max Health"
+texture = ExtResource("2_ol0rj")
+metadata/_custom_type_script = "uid://bevuna5vvpac3"

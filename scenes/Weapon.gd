@@ -1,8 +1,5 @@
-extends Resource
+extends Item
 class_name Weapon
-
-@export var title : String
-@export var texture : Texture2D
 
 @export var damage : float
 @export var cooldown : float
@@ -11,7 +8,6 @@ class_name Weapon
 @export var projectile_node : PackedScene = preload("res://scenes/projectile.tscn")
 
 @export var upgrades : Array[Upgrade]
-var level = 1
 
 func activate(_source, _target, _scene_tree):
 	pass

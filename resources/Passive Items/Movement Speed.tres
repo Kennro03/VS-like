@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://xmuo2xf0osum"]
+
+[ext_resource type="Script" uid="uid://bevuna5vvpac3" path="res://scenes/PassiveItem.gd" id="1_5ud67"]
+[ext_resource type="Texture2D" uid="uid://bkxcuvk5v0lsi" path="res://assets/Items/movement_speed.png" id="2_u5le3"]
+[ext_resource type="Script" uid="uid://d2h5t52xk8bls" path="res://scenes/Stats.gd" id="3_n0048"]
+
+[sub_resource type="Resource" id="Resource_eplgi"]
+script = ExtResource("3_n0048")
+description = "+15 Movement Speed"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 15.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[sub_resource type="Resource" id="Resource_n2pqm"]
+script = ExtResource("3_n0048")
+description = "+20 Movement Speed"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 20.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[sub_resource type="Resource" id="Resource_xvhf2"]
+script = ExtResource("3_n0048")
+description = "+25 Movement Speed"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 25.0
+might = 0.0
+area = 0.0
+magnet = 0.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[resource]
+script = ExtResource("1_5ud67")
+upgrades = Array[ExtResource("3_n0048")]([SubResource("Resource_eplgi"), SubResource("Resource_n2pqm"), SubResource("Resource_xvhf2")])
+title = "Movement Speed"
+texture = ExtResource("2_u5le3")
+metadata/_custom_type_script = "uid://bevuna5vvpac3"

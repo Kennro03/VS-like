@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b50bchgqy227m"]
+[gd_scene load_steps=21 format=3 uid="uid://b50bchgqy227m"]
 
 [ext_resource type="Script" uid="uid://ct31f8fd1k1x4" path="res://scenes/player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://b5jxgmgrg3jpf" path="res://scenes/slot.tscn" id="2_g2els"]
@@ -8,7 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://bdsgdfp43vr04" path="res://assets/Level Up & Option/UnderXP.png" id="4_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://ne15md1ar30p" path="res://assets/Level Up & Option/OverXP.png" id="5_fjrip"]
 [ext_resource type="Texture2D" uid="uid://bq4s0xevvst1y" path="res://assets/Level Up & Option/ProgressXP.png" id="6_smehm"]
+[ext_resource type="PackedScene" uid="uid://kcio1ifq6pqc" path="res://scenes/passive_slot.tscn" id="6_y4r1p"]
+[ext_resource type="Resource" uid="uid://du6pb1jc8v67y" path="res://resources/Passive Items/Magnet.tres" id="7_d2wvv"]
 [ext_resource type="Script" uid="uid://b0yihqiqpk5ad" path="res://scenes/options.gd" id="7_fjrip"]
+[ext_resource type="Resource" uid="uid://brj48p4ctbee0" path="res://resources/Passive Items/Might.tres" id="8_jej6c"]
+[ext_resource type="Resource" uid="uid://cwigxfss7ok4b" path="res://resources/Passive Items/Area.tres" id="9_f1ej7"]
 
 [sub_resource type="Curve" id="Curve_ur7pv"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.927928, 0.606742), -1.54414, -1.54414, 0, 0, Vector2(1, 0), -3.32584, 0.0, 0, 0]
@@ -85,20 +89,38 @@ grow_horizontal = 2
 text = "LEVEL UP"
 
 [node name="Weapons" type="HBoxContainer" parent="UI"]
-offset_left = 12.0
-offset_top = 19.0
-offset_right = 140.0
-offset_bottom = 59.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 148.0
+offset_bottom = 60.0
 
 [node name="Slot" parent="UI/Weapons" instance=ExtResource("2_g2els")]
 layout_mode = 2
-weapon = ExtResource("3_qhqgy")
+item = ExtResource("3_qhqgy")
 
 [node name="Slot2" parent="UI/Weapons" instance=ExtResource("2_g2els")]
 layout_mode = 2
 
 [node name="Slot3" parent="UI/Weapons" instance=ExtResource("2_g2els")]
 layout_mode = 2
+
+[node name="PassiveItems" type="HBoxContainer" parent="UI"]
+offset_left = 20.0
+offset_top = 70.0
+offset_right = 148.0
+offset_bottom = 110.0
+
+[node name="PassiveSlot" parent="UI/PassiveItems" instance=ExtResource("6_y4r1p")]
+layout_mode = 2
+item = ExtResource("7_d2wvv")
+
+[node name="PassiveSlot2" parent="UI/PassiveItems" instance=ExtResource("6_y4r1p")]
+layout_mode = 2
+item = ExtResource("8_jej6c")
+
+[node name="PassiveSlot3" parent="UI/PassiveItems" instance=ExtResource("6_y4r1p")]
+layout_mode = 2
+item = ExtResource("9_f1ej7")
 
 [node name="XP" type="TextureProgressBar" parent="UI"]
 unique_name_in_owner = true
@@ -127,7 +149,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "Lv 1"
 
-[node name="Options" type="VBoxContainer" parent="UI" node_paths=PackedStringArray("weapons", "particles", "panel")]
+[node name="Options" type="VBoxContainer" parent="UI" node_paths=PackedStringArray("weapons", "passive_items", "particles", "panel")]
 unique_name_in_owner = true
 process_mode = 3
 anchors_preset = 8
@@ -143,6 +165,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("7_fjrip")
 weapons = NodePath("../Weapons")
+passive_items = NodePath("../PassiveItems")
 particles = NodePath("../Particle")
 panel = NodePath("../Panel")
 

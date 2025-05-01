@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PassiveItem" load_steps=7 format=3 uid="uid://du6pb1jc8v67y"]
+
+[ext_resource type="Script" uid="uid://bevuna5vvpac3" path="res://scenes/PassiveItem.gd" id="1_82em7"]
+[ext_resource type="Texture2D" uid="uid://cggocfe6wf5yv" path="res://assets/Items/magnet.png" id="2_82em7"]
+[ext_resource type="Script" uid="uid://d2h5t52xk8bls" path="res://scenes/Stats.gd" id="3_6ljra"]
+
+[sub_resource type="Resource" id="Resource_mgu2e"]
+script = ExtResource("3_6ljra")
+description = "+15 Magnet Range"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 15.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[sub_resource type="Resource" id="Resource_7tv1t"]
+script = ExtResource("3_6ljra")
+description = "+20 Magnet Range"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 20.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[sub_resource type="Resource" id="Resource_g1hcx"]
+script = ExtResource("3_6ljra")
+description = "+25 Magnet Range"
+max_health = 0.0
+recovery = 0.0
+armor = 0.0
+movement_speed = 0.0
+might = 0.0
+area = 0.0
+magnet = 25.0
+growth = 0.0
+metadata/_custom_type_script = "uid://d2h5t52xk8bls"
+
+[resource]
+script = ExtResource("1_82em7")
+upgrades = Array[ExtResource("3_6ljra")]([SubResource("Resource_mgu2e"), SubResource("Resource_7tv1t"), SubResource("Resource_g1hcx")])
+title = "Magnet"
+texture = ExtResource("2_82em7")
+metadata/_custom_type_script = "uid://bevuna5vvpac3"

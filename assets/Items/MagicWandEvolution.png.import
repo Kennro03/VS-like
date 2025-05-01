@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3tx6kkydbuob"
-path="res://.godot/imported/MagicWand.png-e421b9bf18c35cd396781e2ba0c33ddb.ctex"
+uid="uid://cpoqm2jo2wvgp"
+path="res://.godot/imported/MagicWandEvolution.png-794b5757f529efd6e106bbb0d888705f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MagicWand.png"
-dest_files=["res://.godot/imported/MagicWand.png-e421b9bf18c35cd396781e2ba0c33ddb.ctex"]
+source_file="res://assets/Items/MagicWandEvolution.png"
+dest_files=["res://.godot/imported/MagicWandEvolution.png-794b5757f529efd6e106bbb0d888705f.ctex"]
 
 [params]
 
