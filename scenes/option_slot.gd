@@ -4,9 +4,14 @@ extends TextureButton
 	set(value):
 		item = value
 		
-		texture_normal = value.texture
-		$Label.text = "Lvl " + str(item.level + 1)
-		$Description.text = value.upgrades[value.level - 1].description
+		if value.upgrades.size() > 0 and value.upgrades.size() +1 != value.level:
+			texture_normal = value.texture
+			$Label.text = "Lvl " + str(item.level + 1)
+			$Description.text = value.upgrades[value.level - 1].description
+		else :
+			texture_normal = value.evolution.texture
+			$Label.text = ""
+			$Description.text = "EVOLUTION"
 
 
 func _on_gui_input(event: InputEvent) :
