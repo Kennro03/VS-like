@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://b50bchgqy227m"]
+[gd_scene load_steps=39 format=3 uid="uid://b50bchgqy227m"]
 
 [ext_resource type="Script" uid="uid://ct31f8fd1k1x4" path="res://scenes/player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://b5jxgmgrg3jpf" path="res://scenes/slot.tscn" id="2_g2els"]
@@ -13,6 +13,8 @@
 [ext_resource type="Script" uid="uid://b0yihqiqpk5ad" path="res://scenes/options.gd" id="7_fjrip"]
 [ext_resource type="Resource" uid="uid://brj48p4ctbee0" path="res://resources/Passive Items/Might.tres" id="8_jej6c"]
 [ext_resource type="Resource" uid="uid://cwigxfss7ok4b" path="res://resources/Passive Items/Area.tres" id="9_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://bviydd4cwh8mg" path="res://assets/Level Up & Option/Fantasy RPG (Toony) 32x32.png" id="14_f1ej7"]
+[ext_resource type="Script" uid="uid://dw6tg3dg0scdp" path="res://scenes/chest.gd" id="14_oprun"]
 
 [sub_resource type="Curve" id="Curve_ur7pv"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.927928, 0.606742), -1.54414, -1.54414, 0, 0, Vector2(1, 0), -3.32584, 0.0, 0, 0]
@@ -32,6 +34,125 @@ gravity = Vector3(0, 98, 0)
 scale_curve = SubResource("CurveTexture_y4r1p")
 hue_variation_min = -2.23517e-08
 hue_variation_max = -2.23517e-08
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oprun"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(96, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8ls1"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(96, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfm1y"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(128, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fulsm"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(160, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r5pv"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(96, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60mlk"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(128, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4ail"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(160, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a38lo"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(96, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ni07"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(128, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l71n6"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(160, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ke2ow"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(96, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujl30"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(128, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31cv2"]
+atlas = ExtResource("14_f1ej7")
+region = Rect2(160, 224, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pf23h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oprun")
+}],
+"loop": false,
+"name": &"idle_boss_chest",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8ls1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfm1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fulsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r5pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60mlk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4ail")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a38lo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ni07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l71n6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ke2ow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujl30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31cv2")
+}],
+"loop": false,
+"name": &"open_boss_chest",
+"speed": 24.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f1ej7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oprun"]
+bg_color = Color(0.537255, 0.431373, 0.188235, 1)
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.4, 0.223529, 0.192157, 1)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_size = 1
+shadow_offset = Vector2(2, 2)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_onrkg"]
 size = Vector2(20, 20)
@@ -169,6 +290,112 @@ passive_items = NodePath("../PassiveItems")
 particles = NodePath("../Particle")
 panel = NodePath("../Panel")
 
+[node name="Chest" type="NinePatchRect" parent="UI"]
+process_mode = 3
+custom_minimum_size = Vector2(300, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ur7pv")
+patch_margin_left = 7
+patch_margin_top = 7
+patch_margin_right = 7
+patch_margin_bottom = 7
+script = ExtResource("14_oprun")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="UI/Chest"]
+position = Vector2(150, 110)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_pf23h")
+animation = &"idle_boss_chest"
+
+[node name="Open" type="Button" parent="UI/Chest"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -25.0
+offset_top = -45.0
+offset_right = 25.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f1ej7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oprun")
+text = "Open
+"
+
+[node name="Close" type="Button" parent="UI/Chest"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -25.0
+offset_top = -45.0
+offset_right = 25.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f1ej7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oprun")
+text = "Close"
+
+[node name="Rewards" type="Control" parent="UI/Chest"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/Chest/Rewards"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = 80.0
+offset_right = 60.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" type="TextureRect" parent="UI/Chest/Rewards"]
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 80.0
+offset_bottom = 80.0
+
+[node name="TextureRect3" type="TextureRect" parent="UI/Chest/Rewards"]
+offset_left = 130.0
+offset_top = 20.0
+offset_right = 170.0
+offset_bottom = 60.0
+
+[node name="TextureRect4" type="TextureRect" parent="UI/Chest/Rewards"]
+offset_left = 220.0
+offset_top = 40.0
+offset_right = 260.0
+offset_bottom = 80.0
+
+[node name="TextureRect5" type="TextureRect" parent="UI/Chest/Rewards"]
+offset_left = 220.0
+offset_top = 100.0
+offset_right = 260.0
+offset_bottom = 140.0
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("PlaceholderTexture2D_onrkg")
 
@@ -208,6 +435,9 @@ collision_mask = 4
 unique_name_in_owner = true
 shape = SubResource("CircleShape2D_tuyoq")
 
+[connection signal="pressed" from="UI/Chest/Open" to="." method="_on_open_pressed"]
+[connection signal="pressed" from="UI/Chest/Open" to="UI/Chest" method="_on_open_pressed"]
+[connection signal="pressed" from="UI/Chest/Close" to="UI/Chest" method="_on_close_pressed"]
 [connection signal="body_entered" from="SelfDamage" to="." method="_on_self_damage_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="area_entered" from="Magnet" to="." method="_on_magnet_area_entered"]

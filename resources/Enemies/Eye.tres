@@ -5,7 +5,6 @@
 [ext_resource type="Resource" uid="uid://bmga4emqrcyw6" path="res://resources/Pickups/Blue Gem.tres" id="2_hgblq"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_83m86"]
-load_path = "res://.godot/imported/eye1.png-143443724cc679458f4d9fb18ed247da.ctex"
 
 [resource]
 script = ExtResource("1_df8ge")
