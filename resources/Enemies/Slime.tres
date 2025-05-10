@@ -4,13 +4,12 @@
 [ext_resource type="Script" uid="uid://dsxv0rjw5nrao" path="res://scenes/EnemyType.gd" id="1_hi4h4"]
 [ext_resource type="Resource" uid="uid://bmga4emqrcyw6" path="res://resources/Pickups/Blue Gem.tres" id="2_djv7o"]
 [ext_resource type="Resource" uid="uid://b731xgcnt2nrj" path="res://resources/Pickups/Green Gem.tres" id="3_16l1i"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kk8qv"]
+[ext_resource type="Texture2D" uid="uid://bq3eo0vwov621" path="res://assets/enemies/slime1.png" id="5_of4fr"]
 
 [resource]
 script = ExtResource("1_hi4h4")
 title = "Slime"
-texture = SubResource("CompressedTexture2D_kk8qv")
+texture = ExtResource("5_of4fr")
 health = 5.0
 damage = 3.0
 drops = Array[ExtResource("1_a0m14")]([ExtResource("2_djv7o"), ExtResource("3_16l1i")])

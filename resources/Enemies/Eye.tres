@@ -3,13 +3,12 @@
 [ext_resource type="Script" uid="uid://dsxv0rjw5nrao" path="res://scenes/EnemyType.gd" id="1_df8ge"]
 [ext_resource type="Script" uid="uid://cbkcbohpfpvkj" path="res://scenes/PickupResource.gd" id="1_rc8c4"]
 [ext_resource type="Resource" uid="uid://bmga4emqrcyw6" path="res://resources/Pickups/Blue Gem.tres" id="2_hgblq"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_83m86"]
+[ext_resource type="Texture2D" uid="uid://b5hvipmjih6me" path="res://assets/enemies/eye1.png" id="4_k7jea"]
 
 [resource]
 script = ExtResource("1_df8ge")
 title = ""
-texture = SubResource("CompressedTexture2D_83m86")
+texture = ExtResource("4_k7jea")
 health = 3.0
 damage = 1.0
 drops = Array[ExtResource("1_rc8c4")]([ExtResource("2_hgblq")])

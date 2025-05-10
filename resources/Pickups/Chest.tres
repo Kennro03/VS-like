@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Chest" load_steps=3 format=3 uid="uid://c5cm3vg0ptvls"]
+
+[ext_resource type="Texture2D" uid="uid://bjly0cv3na8pj" path="res://assets/Level Up & Option/RedGem.png" id="1_nenli"]
+[ext_resource type="Script" uid="uid://ducuws12qli07" path="res://scenes/ChestResource.gd" id="2_x2xao"]
+
+[resource]
+script = ExtResource("2_x2xao")
+title = "Boss Chest"
+icon = ExtResource("1_nenli")
+description = ""
+metadata/_custom_type_script = "uid://ducuws12qli07"

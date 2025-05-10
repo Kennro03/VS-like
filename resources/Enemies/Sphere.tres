@@ -4,13 +4,12 @@
 [ext_resource type="Script" uid="uid://cbkcbohpfpvkj" path="res://scenes/PickupResource.gd" id="1_s2lee"]
 [ext_resource type="Resource" uid="uid://b731xgcnt2nrj" path="res://resources/Pickups/Green Gem.tres" id="2_k10k1"]
 [ext_resource type="Resource" uid="uid://we4yokxswxa7" path="res://resources/Pickups/Yellow Gem.tres" id="3_k10k1"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pu3ys"]
+[ext_resource type="Texture2D" uid="uid://b61atqrqatjtr" path="res://assets/enemies/sphere1.png" id="5_6gl0v"]
 
 [resource]
 script = ExtResource("1_lwhp5")
 title = "Sphere"
-texture = SubResource("CompressedTexture2D_pu3ys")
+texture = ExtResource("5_6gl0v")
 health = 7.0
 damage = 7.0
 drops = Array[ExtResource("1_s2lee")]([ExtResource("2_k10k1"), ExtResource("3_k10k1")])
