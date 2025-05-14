@@ -2,6 +2,7 @@ extends Node2D
 
 @export var player : CharacterBody2D
 @export var enemy : PackedScene
+@export var destructible : PackedScene
 
 var distance : float = 400
 var can_spawn : bool = true
@@ -22,11 +23,13 @@ var second : int:
 			minute+=1
 		%Second.text = str(second).lpad(2,'0')
 
+
 func _physics_process(_delta) :
 	if get_tree().get_node_count_in_group("Enemy") < 700:
 		can_spawn = true
 	else:
 		can_spawn = false
+
 
 func spawn(pos : Vector2, elite : bool = false):
 	if not can_spawn and not elite:
@@ -55,9 +58,19 @@ func _on_timer_timeout() -> void:
 	second += 1
 	amount(second % 10)
 
+
 func _on_pattern_timeout() -> void:
 	for i in range(75):
 		spawn(get_random_postion())
 
 func _on_elite_timeout() -> void:
 	spawn(get_random_postion(),true)
+
+
+func _on_destructible_timeout() -> void:
+	spawn_destructible(get_random_postion())
+
+func spawn_destructible(pos):
+	var object_instance = destructible.instantiate()
+	object_instance.position = pos
+	get_tree().current_scene.add_child(object_instance)
