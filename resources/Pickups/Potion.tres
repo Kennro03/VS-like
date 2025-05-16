@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Health" load_steps=3 format=3 uid="uid://dhyc4fu5qrcx5"]
+
+[ext_resource type="Texture2D" uid="uid://b7mx20xpumyh3" path="res://assets/Pickups/fa266.png" id="1_crggc"]
+[ext_resource type="Script" uid="uid://d2t7c4bk2681m" path="res://scenes/Health.gd" id="2_jak1r"]
+
+[resource]
+script = ExtResource("2_jak1r")
+amount = 20
+title = "Potion"
+icon = ExtResource("1_crggc")
+description = "+20 Health"
+metadata/_custom_type_script = "uid://d2t7c4bk2681m"
