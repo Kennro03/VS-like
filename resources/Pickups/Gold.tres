@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Gold" load_steps=3 format=3 uid="uid://cyfqygtmagdjh"]
+
+[ext_resource type="Texture2D" uid="uid://d07y6cqvsy5bs" path="res://assets/Pickups/fb136.png" id="1_6hpao"]
+[ext_resource type="Script" uid="uid://c547gvhq22bej" path="res://scenes/Gold.gd" id="2_fm0yb"]
+
+[resource]
+script = ExtResource("2_fm0yb")
+gold = 5
+title = "Gold"
+icon = ExtResource("1_6hpao")
+description = "+5 Gold"
+metadata/_custom_type_script = "uid://c547gvhq22bej"

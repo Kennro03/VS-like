@@ -114,6 +114,7 @@ player = NodePath("../Player")
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 color = Color(0.653142, 0.628821, 0.764758, 1)
+energy = 0.75
 blend_mode = 2
 
 [node name="Destructible" parent="." instance=ExtResource("5_qjeyg")]

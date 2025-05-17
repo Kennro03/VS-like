@@ -1,9 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://c8cbee1eoha6f"]
+[gd_scene load_steps=11 format=3 uid="uid://c8cbee1eoha6f"]
 
 [ext_resource type="Texture2D" uid="uid://cpqrvqjuch742" path="res://assets/Pickups/Torch Animated.png" id="1_vhtfy"]
-[ext_resource type="Script" uid="uid://qu0inlkrt01i" path="res://scenes/destructible.gd" id="2_l8yo0"]
+[ext_resource type="Script" path="res://scenes/destructible.gd" id="2_l8yo0"]
 [ext_resource type="Script" uid="uid://cbkcbohpfpvkj" path="res://scenes/PickupResource.gd" id="3_iw4aa"]
 [ext_resource type="Resource" uid="uid://dhyc4fu5qrcx5" path="res://resources/Pickups/Potion.tres" id="4_aay8l"]
+[ext_resource type="Resource" uid="uid://cyfqygtmagdjh" path="res://resources/Pickups/Gold.tres" id="4_iw4aa"]
+[ext_resource type="Resource" uid="uid://cv0ntkpcvl0u8" path="res://resources/Pickups/Death.tres" id="5_aay8l"]
+[ext_resource type="Resource" uid="uid://dkrnh8mn64mo2" path="res://resources/Pickups/Vaccum.tres" id="7_rwuy0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l8yo0"]
 height = 38.0
@@ -23,7 +26,7 @@ texture = ExtResource("1_vhtfy")
 hframes = 4
 vframes = 2
 script = ExtResource("2_l8yo0")
-drops = Array[ExtResource("3_iw4aa")]([ExtResource("4_aay8l")])
+drops = Array[ExtResource("3_iw4aa")]([ExtResource("4_iw4aa"), ExtResource("5_aay8l"), ExtResource("4_aay8l"), ExtResource("7_rwuy0")])
 
 [node name="Area2D" type="Area2D" parent="."]
 visible = false
