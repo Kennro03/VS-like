@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="Health" load_steps=3 format=3 uid="uid://dhyc4fu5qrcx5"]
+[gd_resource type="Resource" script_class="Health" load_steps=4 format=3 uid="uid://dhyc4fu5qrcx5"]
 
 [ext_resource type="Texture2D" uid="uid://chu6rg6mekmw8" path="res://assets/Pickups/fb268.png" id="1_crggc"]
-[ext_resource type="Script" path="res://scenes/Health.gd" id="2_jak1r"]
+[ext_resource type="Script" uid="uid://d2t7c4bk2681m" path="res://scenes/Health.gd" id="2_jak1r"]
+[ext_resource type="AudioStream" uid="uid://c2te2ub4win06" path="res://assets/Sound/Stereo/wav (HD)/JDSherbert - Pixel UI SFX Pack - Select 2 (Sine).wav" id="3_jak1r"]
 
 [resource]
 script = ExtResource("2_jak1r")
@@ -9,3 +10,4 @@ amount = 20
 title = "Potion"
 icon = ExtResource("1_crggc")
 description = "+20 Health"
+sound = ExtResource("3_jak1r")

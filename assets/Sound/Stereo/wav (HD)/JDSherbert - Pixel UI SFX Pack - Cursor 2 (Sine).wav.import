@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cer48y5xe7m6d"
+path="res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Cursor 2 (Sine).wav-8347b4de1f23480bcd78b62ccc55fc11.sample"
+
+[deps]
+
+source_file="res://assets/Sound/Stereo/wav (HD)/JDSherbert - Pixel UI SFX Pack - Cursor 2 (Sine).wav"
+dest_files=["res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Cursor 2 (Sine).wav-8347b4de1f23480bcd78b62ccc55fc11.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

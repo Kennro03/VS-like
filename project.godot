@@ -15,6 +15,10 @@ run/main_scene="uid://d4m5jhlmw28ym"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SoundManager="*res://scenes/sound_manager.tscn"
+
 [file_customization]
 
 folder_colors={
@@ -22,6 +26,7 @@ folder_colors={
 "res://assets/": "orange",
 "res://assets/Items/": "green",
 "res://assets/Level Up & Option/": "purple",
+"res://assets/Sound/": "teal",
 "res://assets/enemies/": "red",
 "res://resources/": "blue",
 "res://resources/Enemies/": "red",

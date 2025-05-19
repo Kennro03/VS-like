@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://mmexmege6s0k"
+path="res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Error 2 (Sine).wav-f1d7834a484e7c526c0e24832683d5b3.sample"
+
+[deps]
+
+source_file="res://assets/Sound/Stereo/wav (SD)/JDSherbert - Pixel UI SFX Pack - Error 2 (Sine).wav"
+dest_files=["res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Error 2 (Sine).wav-f1d7834a484e7c526c0e24832683d5b3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

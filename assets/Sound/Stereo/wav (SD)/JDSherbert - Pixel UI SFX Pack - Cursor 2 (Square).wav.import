@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dp1qeq1n25hhy"
+path="res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Cursor 2 (Square).wav-be58c7cc3bd0fa2993f769b34648a627.sample"
+
+[deps]
+
+source_file="res://assets/Sound/Stereo/wav (SD)/JDSherbert - Pixel UI SFX Pack - Cursor 2 (Square).wav"
+dest_files=["res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Cursor 2 (Square).wav-be58c7cc3bd0fa2993f769b34648a627.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

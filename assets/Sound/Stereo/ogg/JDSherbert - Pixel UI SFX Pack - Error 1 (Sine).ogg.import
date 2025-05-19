@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3r2sgv0unii6"
+path="res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Error 1 (Sine).ogg-8be31320646d0cd334501a5c11da780b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Sound/Stereo/ogg/JDSherbert - Pixel UI SFX Pack - Error 1 (Sine).ogg"
+dest_files=["res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Error 1 (Sine).ogg-8be31320646d0cd334501a5c11da780b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

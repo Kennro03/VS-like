@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://g78yhlmd0c4v"
+path="res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Select 2 (Square).mp3-d2d812b981c0da8952d36fa68c7296a3.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound/Stereo/mp3/JDSherbert - Pixel UI SFX Pack - Select 2 (Square).mp3"
+dest_files=["res://.godot/imported/JDSherbert - Pixel UI SFX Pack - Select 2 (Square).mp3-d2d812b981c0da8952d36fa68c7296a3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

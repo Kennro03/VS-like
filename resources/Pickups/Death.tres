@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="Death" load_steps=3 format=3 uid="uid://cv0ntkpcvl0u8"]
+[gd_resource type="Resource" script_class="Death" load_steps=4 format=3 uid="uid://cv0ntkpcvl0u8"]
 
 [ext_resource type="Texture2D" uid="uid://djnhnef38dbrp" path="res://assets/Pickups/fb1361.png" id="1_502te"]
 [ext_resource type="Script" uid="uid://0qkrgldf6yp0" path="res://scenes/Death.gd" id="2_6ie2f"]
+[ext_resource type="AudioStream" uid="uid://c2te2ub4win06" path="res://assets/Sound/Stereo/wav (HD)/JDSherbert - Pixel UI SFX Pack - Select 2 (Sine).wav" id="3_6ie2f"]
 
 [resource]
 script = ExtResource("2_6ie2f")
 title = "Death"
 icon = ExtResource("1_502te")
 description = "Destroys every enemy"
+sound = ExtResource("3_6ie2f")
 metadata/_custom_type_script = "uid://0qkrgldf6yp0"
