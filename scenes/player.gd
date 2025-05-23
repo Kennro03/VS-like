@@ -1,5 +1,18 @@
 extends CharacterBody2D
 
+@onready var _animation_player = $AnimationPlayer
+func _process(_delta):
+	if Input.is_action_pressed("right"):
+		$CharacterSprite.flip_h = false
+		_animation_player.play("Walk")
+	elif Input.is_action_pressed("left"):
+		$CharacterSprite.flip_h = true
+		_animation_player.play("Walk")
+	elif Input.is_action_pressed("up") or Input.is_action_pressed("down"):
+		_animation_player.play("Walk")
+	else:
+		_animation_player.play("Idle")
+
 
 var health : float = 100:
 	set(value):

@@ -55,7 +55,11 @@ func upgrade_item(start,end):
 		else:
 			var selected_upgrade : Item
 			selected_upgrade = upgrades.pick_random()
-			rewards.get_child(index).texture = selected_upgrade.texture
+			if selected_upgrade is Weapon and selected_upgrade.max_level_reached():
+				rewards.get_child(index).texture = selected_upgrade.evolution.icon
+			else:
+				rewards.get_child(index).texture = selected_upgrade.icon
+			
 			selected_upgrade.upgrade_item()
 
 

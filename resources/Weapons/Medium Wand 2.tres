@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="SingleShot" load_steps=5 format=3 uid="uid://dn44ca3p3nd2r"]
+[gd_resource type="Resource" script_class="SingleShot" load_steps=6 format=3 uid="uid://dn44ca3p3nd2r"]
 
 [ext_resource type="PackedScene" uid="uid://dqsh8yyf474v6" path="res://scenes/projectile.tscn" id="1_7x78m"]
 [ext_resource type="Script" uid="uid://co27ss4xsysev" path="res://scenes/SingleShot.gd" id="2_3deht"]
 [ext_resource type="Texture2D" uid="uid://cpoqm2jo2wvgp" path="res://assets/Items/MagicWandEvolution.png" id="3_b5ntk"]
+[ext_resource type="Texture2D" uid="uid://b1yywru1eq2il" path="res://assets/Items/meteor-evolved.png" id="4_3deht"]
 [ext_resource type="Script" uid="uid://dhuvbp8vmhy5w" path="res://scenes/Upgrade.gd" id="4_pvf1s"]
 
 [resource]
@@ -13,5 +14,6 @@ speed = 500.0
 projectile_node = ExtResource("1_7x78m")
 upgrades = Array[ExtResource("4_pvf1s")]([])
 title = "Medium Wand"
-texture = ExtResource("3_b5ntk")
+icon = ExtResource("3_b5ntk")
+texture = ExtResource("4_3deht")
 metadata/_custom_type_script = "uid://co27ss4xsysev"
