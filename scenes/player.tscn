@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://b50bchgqy227m"]
+[gd_scene load_steps=48 format=3 uid="uid://b50bchgqy227m"]
 
 [ext_resource type="Script" uid="uid://ct31f8fd1k1x4" path="res://scenes/player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://b5jxgmgrg3jpf" path="res://scenes/slot.tscn" id="2_g2els"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://kcio1ifq6pqc" path="res://scenes/passive_slot.tscn" id="6_y4r1p"]
 [ext_resource type="Resource" uid="uid://du6pb1jc8v67y" path="res://resources/Passive Items/Magnet.tres" id="7_d2wvv"]
 [ext_resource type="Script" uid="uid://b0yihqiqpk5ad" path="res://scenes/options.gd" id="7_fjrip"]
+[ext_resource type="Resource" uid="uid://kfxs0wcw52we" path="res://resources/Weapons/Lightning.tres" id="7_fulsm"]
 [ext_resource type="Resource" uid="uid://brj48p4ctbee0" path="res://resources/Passive Items/Might.tres" id="8_jej6c"]
 [ext_resource type="Resource" uid="uid://cwigxfss7ok4b" path="res://resources/Passive Items/Area.tres" id="9_f1ej7"]
 [ext_resource type="Texture2D" uid="uid://bviydd4cwh8mg" path="res://assets/Level Up & Option/Fantasy RPG (Toony) 32x32.png" id="14_f1ej7"]
@@ -348,6 +349,7 @@ item = ExtResource("6_qfm1y")
 
 [node name="Slot3" parent="UI/Weapons" instance=ExtResource("2_g2els")]
 layout_mode = 2
+item = ExtResource("7_fulsm")
 
 [node name="PassiveItems" type="HBoxContainer" parent="UI"]
 offset_left = 20.0

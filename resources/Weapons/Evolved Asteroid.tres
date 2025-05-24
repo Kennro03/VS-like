@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Circular" load_steps=6 format=3 uid="uid://tidotskah42k"]
+
+[ext_resource type="Texture2D" uid="uid://b46q5udfjahdf" path="res://assets/Items/ring-pink.png" id="1_jnjbe"]
+[ext_resource type="PackedScene" uid="uid://dqsh8yyf474v6" path="res://scenes/projectile.tscn" id="2_bv7lv"]
+[ext_resource type="Script" uid="uid://b1grbmbv3alt1" path="res://scenes/CircularWeapon.gd" id="3_d6t3h"]
+[ext_resource type="Texture2D" uid="uid://b1yywru1eq2il" path="res://assets/Items/meteor-evolved.png" id="4_jnjbe"]
+[ext_resource type="Script" uid="uid://dhuvbp8vmhy5w" path="res://scenes/Upgrade.gd" id="5_6b3b3"]
+
+[resource]
+script = ExtResource("3_d6t3h")
+angular_speed = 270
+radius = 75
+amount = 7
+damage = 10.0
+cooldown = 2.0
+speed = 0.0
+projectile_node = ExtResource("2_bv7lv")
+upgrades = Array[ExtResource("5_6b3b3")]([])
+title = "Evolved Asteroid"
+icon = ExtResource("1_jnjbe")
+texture = ExtResource("4_jnjbe")
+metadata/_custom_type_script = "uid://b1grbmbv3alt1"

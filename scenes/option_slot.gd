@@ -9,7 +9,7 @@ extends TextureButton
 			$Label.text = "Lvl " + str(item.level + 1)
 			$Description.text = value.upgrades[value.level - 1].description
 		else :
-			texture_normal = value.evolution.texture
+			texture_normal = value.evolution.icon
 			$Label.text = ""
 			$Description.text = "EVOLUTION"
 

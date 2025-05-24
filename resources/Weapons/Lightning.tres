@@ -1,0 +1,67 @@
+[gd_resource type="Resource" script_class="Lightning" load_steps=15 format=3 uid="uid://kfxs0wcw52we"]
+
+[ext_resource type="Texture2D" uid="uid://6be0pgwfuojy" path="res://assets/Items/bible-yellow.png" id="1_d8nxx"]
+[ext_resource type="Resource" uid="uid://dmokdvndlej51" path="res://resources/Weapons/Evolved Lightning.tres" id="1_ikmcd"]
+[ext_resource type="PackedScene" uid="uid://dqsh8yyf474v6" path="res://scenes/projectile.tscn" id="2_8hp45"]
+[ext_resource type="Resource" uid="uid://cwigxfss7ok4b" path="res://resources/Passive Items/Area.tres" id="3_r8hb1"]
+[ext_resource type="Script" uid="uid://crm17ktkblwfj" path="res://scenes/Lightning.gd" id="3_yg4jm"]
+[ext_resource type="AudioStream" uid="uid://bkyv7xg5kvw2d" path="res://assets/Sound/Stereo/wav (HD)/JDSherbert - Pixel UI SFX Pack - Error 2 (Square).wav" id="4_8hp45"]
+[ext_resource type="Texture2D" uid="uid://cqw4y8mw37sqb" path="res://assets/Items/thunder.png" id="4_8078k"]
+[ext_resource type="Script" uid="uid://dhuvbp8vmhy5w" path="res://scenes/Upgrade.gd" id="5_ikmcd"]
+[ext_resource type="Script" uid="uid://de66ol1omegbr" path="res://scenes/LightningUpgrade.gd" id="7_yg4jm"]
+
+[sub_resource type="Resource" id="Resource_8078k"]
+script = ExtResource("7_yg4jm")
+amount = 1
+damage = 0.0
+cooldown = 0.0
+description = "+1 Strike"
+metadata/_custom_type_script = "uid://de66ol1omegbr"
+
+[sub_resource type="Resource" id="Resource_ikmcd"]
+script = ExtResource("7_yg4jm")
+amount = 0
+damage = 3.0
+cooldown = 0.0
+description = "+3 damage"
+metadata/_custom_type_script = "uid://de66ol1omegbr"
+
+[sub_resource type="Resource" id="Resource_r8hb1"]
+script = ExtResource("7_yg4jm")
+amount = 0
+damage = 0.0
+cooldown = -1.0
+description = "-1 Cooldown"
+metadata/_custom_type_script = "uid://de66ol1omegbr"
+
+[sub_resource type="Resource" id="Resource_yy5p1"]
+script = ExtResource("7_yg4jm")
+amount = 2
+damage = 0.0
+cooldown = 0.0
+description = "+2 Strikes"
+metadata/_custom_type_script = "uid://de66ol1omegbr"
+
+[sub_resource type="Resource" id="Resource_230km"]
+script = ExtResource("7_yg4jm")
+amount = 0
+damage = 2.0
+cooldown = 0.0
+description = "+2 Damage"
+metadata/_custom_type_script = "uid://de66ol1omegbr"
+
+[resource]
+script = ExtResource("3_yg4jm")
+amount = 6
+damage = 20.0
+cooldown = 4.0
+speed = 0.0
+projectile_node = ExtResource("2_8hp45")
+upgrades = Array[ExtResource("5_ikmcd")]([SubResource("Resource_8078k"), SubResource("Resource_ikmcd"), SubResource("Resource_r8hb1"), SubResource("Resource_yy5p1"), SubResource("Resource_230km")])
+item_needed = ExtResource("3_r8hb1")
+evolution = ExtResource("1_ikmcd")
+sound = ExtResource("4_8hp45")
+title = "Lightning"
+icon = ExtResource("1_d8nxx")
+texture = ExtResource("4_8078k")
+metadata/_custom_type_script = "uid://crm17ktkblwfj"

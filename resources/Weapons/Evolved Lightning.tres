@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Lightning" load_steps=7 format=3 uid="uid://dmokdvndlej51"]
+
+[ext_resource type="Texture2D" uid="uid://gn4ep7pvgqab" path="res://assets/Items/bible-pink.png" id="1_6oihy"]
+[ext_resource type="PackedScene" uid="uid://dqsh8yyf474v6" path="res://scenes/projectile.tscn" id="2_egumx"]
+[ext_resource type="Script" uid="uid://crm17ktkblwfj" path="res://scenes/Lightning.gd" id="3_qprso"]
+[ext_resource type="Texture2D" uid="uid://cqw4y8mw37sqb" path="res://assets/Items/thunder.png" id="4_8o5tu"]
+[ext_resource type="AudioStream" uid="uid://bkyv7xg5kvw2d" path="res://assets/Sound/Stereo/wav (HD)/JDSherbert - Pixel UI SFX Pack - Error 2 (Square).wav" id="4_egumx"]
+[ext_resource type="Script" uid="uid://dhuvbp8vmhy5w" path="res://scenes/Upgrade.gd" id="5_uxqcu"]
+
+[resource]
+script = ExtResource("3_qprso")
+amount = 10
+damage = 10.0
+cooldown = 2.0
+speed = 0.0
+projectile_node = ExtResource("2_egumx")
+upgrades = Array[ExtResource("5_uxqcu")]([])
+sound = ExtResource("4_egumx")
+title = "Evolved Lightning"
+icon = ExtResource("1_6oihy")
+texture = ExtResource("4_8o5tu")
+metadata/_custom_type_script = "uid://crm17ktkblwfj"
